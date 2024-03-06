@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+	.btn {
+		@apply rounded px-2 py-1 font-semibold transform transition-all active:scale-95 disabled:active:scale-100 duration-200 ease-in-out disabled:bg-opacity-50 disabled:text-opacity-20 dark:disabled:bg-opacity-50 dark:disabled:text-opacity-20;
+	}
+}
+body {
+	-webkit-tap-highlight-color: transparent;
+	@apply transition-colors duration-300 ease-in-out text-gray-800 dark:text-white bg-gray-50 dark:bg-gray-800;
+}
+
+.btn-primary {
+	@apply btn bg-amber-600 text-white;
+}
+
+.btn-secondary {
+	@apply btn bg-gray-300 text-gray-800 dark:bg-gray-700 dark:text-white;
+}
+
